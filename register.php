@@ -2,7 +2,7 @@
 <!-- HEADER -->
 <?php    
     require_once(__DIR__.'/inc/const.php');
-    $h1 = "Inscription";
+    $h1 = "Inscription avec Test Ecriture Fichiers CSV";
 
     require_once(__DIR__.'/inc/header.php');
 ?>
@@ -14,8 +14,14 @@
     echo "</nav>";
 
     if (isset($_POST["submit"])) {
-        var_dump($_POST);
-        die();
+        $handler = fopen('./files/users.csv', 'a');
+        fputcsv ($handler, [
+            $_POST["email"],
+            $_POST["pwd"],
+            $_POST["prenom"],
+            $_POST["nom"]
+        ]);
+        fclose($handler);        
     }
 ?>
 
