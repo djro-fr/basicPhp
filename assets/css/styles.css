@@ -1,0 +1,7 @@
+body{
+    background-color: bisque;
+    .content{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
