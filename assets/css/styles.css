@@ -1,7 +1,48 @@
 body{
-    background-color: bisque;
+    background-color: #fafafa;
     .content{
         margin-left: 30px;
         margin-right: 30px;
     }
+
+    nav.menuListe{
+        background-color: white;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 30px;
+        ul{
+             margin-left: 0;
+             padding-left: 30px;
+            li{
+                padding: 10px;
+                display: inline-block;
+                list-style: none;
+                a{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    form{
+        margin-left: 30px;
+        margin-right: 30px;
+        div{
+            display: block;
+            margin-bottom: 15px;
+            label{
+                padding-right: 10px;
+            }
+            input{
+                height: 30px;
+            }
+        }
+        input#submit{
+            padding: 15px;
+            min-height: 32px;
+            cursor: pointer;
+
+        }
+    }
+
 }

@@ -11,6 +11,10 @@
 
 <!-- MAIN -->
 <?php
+    echo "<nav class='menuListe'>";
+    require_once(__DIR__.'/inc/menu.php');
+    echo "</nav>";
+
     echo "<p class='content'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et magnam, esse labore architecto libero cupiditate nesciunt consectetur ducimus. Sit nesciunt iusto dicta nobis dolorum debitis tempore veritatis quo sint molestias! Non vitae repudiandae, cumque, nam itaque aspernatur ratione nemo repellat obcaecati porro eveniet harum architecto cum natus distinctio nesciunt dicta.</p>";
 ?>
 
